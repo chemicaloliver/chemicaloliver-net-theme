@@ -201,7 +201,15 @@ button {  width: auto; overflow: visible; }
     Author: 
  */
 
+ #container {
+     width:960px;
+     margin: auto;
+}
 
+#main {
+    width:540px;
+    float: right;
+}
 
 
 

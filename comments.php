@@ -18,21 +18,12 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-  <h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
-
-  <nav>
-    <div><?php previous_comments_link() ?></div>
-    <div><?php next_comments_link() ?></div>
-  </nav>
+  <h3 id="comments"><?php the_title(); ?></h3>
 
   <ol class="commentlist">
   <?php wp_list_comments('type=comment&callback=mytheme_comment'); ?>
   </ol>
 
-  <nav>
-    <div><?php previous_comments_link() ?></div>
-    <div><?php next_comments_link() ?></div>
-  </nav>
  <?php else : // this is displayed if there are no comments so far ?>
 
   <?php if ( comments_open() ) : ?>
@@ -85,7 +76,6 @@
 
   <?php endif; ?>
 
-  <p id="allowed_tags"><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></p>
 
   <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
 

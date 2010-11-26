@@ -30,6 +30,14 @@ function mytheme_comment($comment, $args, $depth) {
 <?php
 }
 
+register_nav_menus(array('primary'=>__('Primary Menu'),));
+
+function ttw_page_menu_args( $args ) {
+	$args['show_home'] = true;
+	return $args;
+}
+add_filter( 'wp_page_menu_args', 'ttw_page_menu_args' );
+
 automatic_feed_links();
 
 // Widgetized Sidebar HTML5 Markup
@@ -67,3 +75,4 @@ function versioned_resource($relative_url){
 
   return $relative_url.$file_version;
 }
+
