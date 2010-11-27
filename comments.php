@@ -60,24 +60,21 @@
   <?php else : ?>
 
   <p>
-    <label for="author">Name <?php if ($req) echo "(required)"; ?></label>
-    <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+      <label for="author"><span>Name <?php if ($req) echo "(required)"; ?></span>
+    <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> /></label>
   </p>
 
   <p>
-    <label for="email"><small>Mail (will not be published) <?php if ($req) echo "(required)"; ?></small></label>
-    <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+      <label for="email"><span>Mail (required, not published)</span>
+    <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> /></label>
   </p>
 
-  <p>
-    <label for="url">Website</label>
-    <input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-  </p>
+ 
 
   <?php endif; ?>
 
-
-  <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+<label for="comment"><span>Message</span>
+  <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p></label>
 
   <p>
     <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
