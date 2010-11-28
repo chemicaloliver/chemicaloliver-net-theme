@@ -1,7 +1,7 @@
 chemicaloliver.net wordpress theme
 ==================================
 
-This theme is built on the html5-boilerplate-for-wordpress themw, which is in turn built on top of the [HTML5 Boilerplate](http://html5boilerplate.com/) by Paul Irish and Divya Manian.
+This theme is built on the html5-boilerplate-for-wordpress theme, which is in turn built on top of the [HTML5 Boilerplate](http://html5boilerplate.com/) by Paul Irish and Divya Manian.
 
 The layout is based on Bruce Lawson's [Designing a Blog with HTML5](http://html5doctor.com/designing-a-blog-with-html5/)
 
